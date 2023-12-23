@@ -69,7 +69,7 @@
             The fundamental blocks of all programming languages are more or less similar. 
             In this article, we will go through the very basic fundamentals things that are required to start our journey to geospatial programming. So let's get started! </p>
         <h3>Data type </h3> 
-<p> There are two basic types of data: quantitative, qualitative. Anything that we can count, measure, or quantify produces quantitative data. On the other hand, qualitative data represents any information in terms of language or description.
+<p> There are two basic types of data: quantitative, qualitative. Quantitative data is anything we can count, measure, or quantify with numberss. On the other hand, qualitative data represents any information in terms of language or description.
  We can not measure or count it.  For example:  the name of a person is qualitative  data while the age of a person is quantitative data. 
  We express quantitative data by using numbers, and qualitative data by using text or string. </p>
 
@@ -80,18 +80,17 @@
 
     
         <h3>Number type data</h3>
-        <p>In programming primarily we use three  basic types of number: integer or whole number, decimal, and float. 
+        <p>In programming, primarily we use three  basic types of number: integer or whole number, decimal, and float. 
         </p>
-        <h3>Integer</h3>
+        <h3>Integer and decimal</h3>
         <p>All positive,  negative whole numbers including 0 are integers. Briefly, all the whole numbers of the number line are integers. 
-            For example: 1,20 -30, 8,0 all are integers. On the other hand, 10.34,  10.67 are decimal numbers. 
-            Though there are few differences between decimal, and float, for the bringing we can consider both as same.</p>
+            A decimal number is a real number that expresses fractions or whole numbers using a decimal point.
+            In a decimal number, the decimal point separates the whole number part from the fractional part. 
+                 For example, in the decimal number 3.14, "3" is the whole number part, and "0.14" is the fractional part.
+            For example: 1,20, -30, 8,0 all are integers.  On the other hand, 10.34,  10.67 are decimal numbers. 
+            Though there are few differences between decimal and float, for the bringing we can consider both as same.</p>
             <h3> Decimal</h3>
-            <p>A decimal number is a real number that expresses fractions or whole numbers using a decimal point.
-                 In a decimal number, the decimal point separates the whole number part from the fractional part. 
-                 For example, in the decimal number 3.14, "3" is the whole number part, and "0.14" is the fractional part. 
-                Though there are few differences between decimal, and float, for the bringing we can consider both as same. </p>
-            <h3>String</h3>
+            
             <p>In programming, a "string" is a way to handle text or qualitative data. It could be a single word, a sentence, or even a collection of paragraphs. To create a string, we  wrap our text in quotation marks. For example:
             </p>
 <pre class="language-js"><code>
@@ -105,9 +104,9 @@ var full_greeting = greeting + " " + sentence
 </code></pre>
 <p>Strings are just sequences of characters, and we can do basic operations like putting them together or taking parts of them. 
     They are handy for dealing with any kind of text-related information in programming.
-    In most programming languages, strings can be written inside either double quotation marks <pre> <code>("string" )</code> </pre>, single quotation marks <pre> <code>('string')</code> </pre> , 
-    or triple quotation marks <pre> <code>('''string''' )</code> </pre> depending on the purpose of use and language syntax. Double quotes are commonly used, but using single quotes can be useful when dealing with strings that contain double quotes, and vice versa. 
-    Triple quotes are often used for multiline strings.</p>
+    In most programming languages, strings can be written inside either double quotation marks  <code>("string" )</code> , single quotation marks <code>('string')</code>  , 
+    or triple quotation marks <code>('''string''' )</code>  depending on the purpose of use and language syntax. Double quotes are commonly used, but using single quotes can be useful when dealing with strings that contain double quotes, and vice versa. 
+    Triple quotes are often used for <strong>multiline </strong> strings.</p>
     <h3>Variable</h3>
     <p>A variable is like a storage box in which we can keep different types of information. 
         Imagine it as a labelled container where we can store numbers, words, or other pieces of data. 
@@ -188,6 +187,19 @@ char name = "my name" //the keyword char indicates that it will store string or 
     <p><strong>Multiplication:</strong> <code> var product = 2 * 6; // product will be 12.</code></p>
     <p><strong>Division:</strong> <code> var quotient = 8 / 2; // quotient will be 4.</code></p>
     <p><strong>Modulus:</strong> <code> var remainder = 10 % 3; // remainder will be 1.</code></p>
+    <h3> Adding Comments inside code for Clarity </h3>
+    <p>A comment in programming is a piece of text that is not executed as part of the program but is included for human readers to understand the code. 
+    Comments provide explanations, notes, or reminders within the code to make it more readable and maintainable.</p>
+    <p>How to add comments depends on the programming language. Here is a common examples of commenting:</p>
+    <h3> </h3>
+    <pre class="language-js"><code> 
+    // This is a single-line comment 
+
+    /*
+    This is a
+    multi-line comment
+    */  
+    </code></pre>
 
 
 
