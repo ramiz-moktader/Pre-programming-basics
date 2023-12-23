@@ -22,8 +22,12 @@
 
         code {
             font-family: Consolas, monospace;
-            /* background-color: #f4f4f4; */
+            background-color: #f4f4f4;
             padding: 2px 4px;
+            overflow: auto;
+            /* border: 1px solid #ddd; */
+
+
             /* border: 1px solid #ddd; */
             /* border-radius: 4px; */
         }
@@ -59,87 +63,237 @@
 </head>
 <body>
     <div id="content">
-        <h1>What is a Variable?</h1>
+        <h2> Journey to Geospatial Programming Learning </h2>
+        <p> Welcome, learners!This is the very first step of learning programming. 
+            To get your hand in geospatial programming, the first step is to go through the basic concepts of programming language. 
+            The fundamental blocks of all programming languages are more or less similar. 
+            In this article, we will go through the very basic fundamentals things that are required to start our journey to geospatial programming. So let's get started! </p>
+        <h3>Data type </h3> 
+<p> There are two basic types of data: quantitative, qualitative. Anything that we can count, measure, or quantify produces quantitative data. On the other hand, qualitative data represents any information in terms of language or description.
+ We can not measure or count it.  For example:  the name of a person is qualitative  data while the age of a person is quantitative data. 
+ We express quantitative data by using numbers, and qualitative data by using text or string. </p>
 
-        <p>A variable is like a storage box in which you can keep different types of information. Imagine it as a labelled container where you can store numbers, words, or other pieces of data. The name you give to the variable helps you and the computer remember what's inside.</p>
+        <h3>Basic data type of programming</h3>
 
-        <h2>Declaring a Variable:</h2>
+        <p>Apart from number and text, we use another basic types of data in programming languages  that are boolean. Boolean has only two values, true and false. 
+        </p>
 
-        <p>In most programming languages, declaring a variable involves giving it a name and specifying the type of data it will hold. Here's a simple example in Python:</p>
-
-        <pre><code># Declare a variable named 'age' and assign the value 25 to it
-age = 25
-        </code></pre>
-
-        <p>In this example, <code>age</code> is the variable name, and <code>25</code> is the data assigned to it.</p>
-
-        <h2>Using Variables in Programming:</h2>
-
+    
+        <h3>Number type data</h3>
+        <p>In programming primarily we use three  basic types of number: integer or whole number, decimal, and float. 
+        </p>
+        <h3>Integer</h3>
+        <p>All positive,  negative whole numbers including 0 are integers. Briefly, all the whole numbers of the number line are integers. 
+            For example: 1,20 -30, 8,0 all are integers. On the other hand, 10.34,  10.67 are decimal numbers. 
+            Though there are few differences between decimal, and float, for the bringing we can consider both as same.</p>
+            <h3> Decimal</h3>
+            <p>A decimal number is a real number that expresses fractions or whole numbers using a decimal point.
+                 In a decimal number, the decimal point separates the whole number part from the fractional part. 
+                 For example, in the decimal number 3.14, "3" is the whole number part, and "0.14" is the fractional part. 
+                Though there are few differences between decimal, and float, for the bringing we can consider both as same. </p>
+            <h3>String</h3>
+            <p>In programming, a "string" is a way to handle text or qualitative data. It could be a single word, a sentence, or even a collection of paragraphs. To create a string, we  wrap our text in quotation marks. For example:
+            </p>
+<pre class="language-js"><code>
+var greeting = "Hello"
+var sentence = "This is a sample sentence."
+</code></pre>
+<p>we can combine strings by using the `+` operator:</p>
+<pre class="language-js"> <code>
+var full_greeting = greeting + " " + sentence
+//This would result in: "Hello This is a sample sentence." 
+</code></pre>
+<p>Strings are just sequences of characters, and we can do basic operations like putting them together or taking parts of them. 
+    They are handy for dealing with any kind of text-related information in programming.
+    In most programming languages, strings can be written inside either double quotation marks <pre> <code>("string" )</code> </pre>, single quotation marks <pre> <code>('string')</code> </pre> , 
+    or triple quotation marks <pre> <code>('''string''' )</code> </pre> depending on the purpose of use and language syntax. Double quotes are commonly used, but using single quotes can be useful when dealing with strings that contain double quotes, and vice versa. 
+    Triple quotes are often used for multiline strings.</p>
+    <h3>Variable</h3>
+    <p>A variable is like a storage box in which we can keep different types of information. 
+        Imagine it as a labelled container where we can store numbers, words, or other pieces of data. 
+        It's associated with a symbolic name and may have a memory address. 
+        The name allows referencing the data, and values  can change during execution. 
+        To store a separate value, we need to use a separate variable.
+         Abstractly, we can say a variable is a named storage location of any kind of data.</p>
+         <h3>Declaring a Variable</h3>
+         <p>In most programming languages, declaring a variable involves giving it a name and specifying the type of data it will hold. 
+            Here's a simple example in Javascript</p>
+<pre class="language-js"><code>
+//Declare a variable named 'age' and assign the value 25 to it
+var age = 25
+</code></pre>
+<p> In this example, <code>'age'</code> is the variable name, and <code>'25'</code>  is the data assigned to it. 
+    The keyword <code> "var" </code>  indicates that it’s a variable. There are some other conventions to declare a variable in <strong>Javascript.</strong> 
+    In some programming languages we need to specify the data type when declaring a variable. Let’s see an example from <strong>C</strong> programming language: </p>
+<pre class="lang-clike"><code>
+int a = 8 //the keyword int indicates it will store integer type data 
+float = 80.10 //the keyword float indicates it will store float or decimal type data 
+char name = "my name" //the keyword char indicates that it will store string or text type data. 
+    </code></pre>
+    <p>But in <strong> Javascript</strong> or <strong>Python</strong>  we are not required to specify the data type when we declare a variable.
+         These programming languages dynamically identify the data type of a variable.
+    </p>
+    <h3>Boolean</h3>
+    <p>Boolean refers to a data type that can have one of two values: true or false.  Boolean values are often used in conditional statements and expressions to make decisions in computer programs. 
+    </p>
+    <p>Let's think about some examples:</p>
         <ol>
-            <li><strong>Storing Information:</strong> Variables let you store different types of information. For instance, you can have a variable called <code>name</code> to store a person's name.</li>
-
-            <pre><code>name = "Alice"</code></pre>
-
-            <li><strong>Changing Values:</strong> Variables are flexible; you can change their values as needed. If Alice has a birthday, you can update her age like this:</li>
-
-            <pre><code>age = 26</code></pre>
-
-            <li><strong>Mathematical Operations:</strong> Variables are handy for calculations. If you want to find the total cost of items, you can use variables for prices and quantities.</li>
-
-            <pre><code>price_per_item = 2.5
-quantity = 10
-total_cost = price_per_item * quantity</code></pre>
-
-            <li><strong>Readability and Reusability:</strong> Using variables makes your code more readable. Instead of writing the same value multiple times, you can use a variable. If the value changes, you only need to update it in one place.</li>
-
-            <pre class="language-js"><code>tax_rate = 0.08
-total_with_tax = total_cost * (1 + tax_rate)</code></pre>
+            <li>Is it sunny outside?
+                <ul> <li> If it is sunny, we can say it's true.</li>
+                <li>If it's not sunny, we can say it's false.</li>
+                </ul>
+            </li>
+            <li>Do we have a pet?
+                <ul><li> If we have a pet, it's true.</li>
+                <li>If we don't have a pet, it's false. </li></ul>
+            </li>
 
         </ol>
-    </div>
+        <p>Sometimes the <strong>true</strong>  value represents <strong> 1 </strong>, and the <strong> false </strong> value represents <strong> 0 </strong> .  </p>
+        <p> Boolean is like a digital switch that helps computers make decisions. It can be either "on" (true) or "off" (false). Think of it like answering questions with a "yes" or "no."
+        </p>
+        <h3>Uses of Boolean in Programming</h3>
+
+    <p><strong>Decision Making:</strong> Boolean helps programs decide what to do based on conditions. For example, if it's raining (true), bring an umbrella; otherwise (false), don't.</p>
+
+    <p><strong>Comparison:</strong> It allows us to compare things, like whether one number is bigger than another. For instance, is 10 greater than 5? (true)</p>
+
+    <p><strong>Logical Operation:</strong> Boolean helps express logical relationships. we can say, "I want ice cream AND it's a sunny day," meaning both conditions must be true.</p>
+
+    <p><strong>Looping:</strong> In programming, Boolean is used to repeat tasks until a condition is no longer true. Like eating cookies while we're hungry (true).</p>
+<code> Example: 
+    Let x = 9, y = 10. Now we will compare if x,  and y have the same value.
+    Is x == y?  false  
+    </code>
+
+    <h3>Arithmetic Operators</h3>
+
+    <p>Arithmetic operators are symbols used in programming to perform mathematical calculations on numerical data. They include:</p>
+
+    <ul>
+        <li><strong>Addition (+):</strong> Adds two values together.</li>
+        <li><strong>Subtraction (-):</strong> Subtracts the right operand from the left operand.</li>
+        <li><strong>Multiplication (*):</strong> Multiplies two values.</li>
+        <li><strong>Division (/):</strong> Divides the left operand by the right operand.</li>
+        <li><strong>Modulus (%):</strong> <p> The modulus operator (%), when applied to the division of the left operand by the right operand, returns the remainder. 
+            For instance, consider the example: <code>var a = 11 % 2 </code>. In this case, the variable  <code>'a'</code>  would be assigned the value 1. 
+            This implies that 'a' stores the remainder when 11 is divided by 2. 
+            The modulus operator is particularly useful for determining whether a given number is odd or even.</p></li>
+    </ul>
+
+    <h3>Basic Arithmetic Examples:</h3>
+
+    <p><strong>Addition:</strong> <code> var total = 5 + 3; // total will be 8.</code></p>
+    <p><strong>Subtraction:</strong> <code>  var difference = 10 - 4; // difference will be 6.</code></p>
+    <p><strong>Multiplication:</strong> <code> var product = 2 * 6; // product will be 12.</code></p>
+    <p><strong>Division:</strong> <code> var quotient = 8 / 2; // quotient will be 4.</code></p>
+    <p><strong>Modulus:</strong> <code> var remainder = 10 % 3; // remainder will be 1.</code></p>
 
 
 
 
+    <ol>
+        <li>
+            What is a variable in programming?
+            <ul>
+                <li>a) A constant value</li>
+                <li>b) A reserved keyword</li>
+                <li>c) A named storage location for data</li>
+                <li>d) An arithmetic operation</li>
+            </ul>
+        </li>
 
-    <div id="content">
-        <h1>What is a Variable?</h1>
+        <li>
+            Which of the following is an integer data type?
+            <ul>
+                <li>a) 3.14</li>
+                <li>b) "Hello"</li>
+                <li>c) True</li>
+                <li>d) 42</li>
+            </ul>
+        </li>
 
-        <p>A variable is like a storage box in which you can keep different types of information. Imagine it as a labelled container where you can store numbers, words, or other pieces of data. The name you give to the variable helps you and the computer remember what's inside.</p>
+        <li>
+            In programming, what does the '%' operator do?
+            <ul>
+                <li>a) Exponentiation</li>
+                <li>b) Modulus (remainder of division)</li>
+                <li>c) Floor division</li>
+                <li>d) Increment</li>
+            </ul>
+        </li>
 
-        <h2>Declaring a Variable:</h2>
+        <li>
+            Which of the following is a boolean value?
+            <ul>
+                <li>a) "Hello"</li>
+                <li>b) 3.14</li>
+                <li>c) False</li>
+                <li>d) 42</li>
+            </ul>
+        </li>
 
-        <p>In most programming languages, declaring a variable involves giving it a name and specifying the type of data it will hold. Here's a simple example in Python:</p>
+        <li>
+            If A = 19 % 2, what will be the value of A?
+            <ul>
+                <li>a) 10</li>
+                <li>b) 9</li>
+                <li>c) 3</li>
+                <li>d) 1</li>
+            </ul>
+        </li>
 
-        <pre><code># Declare a variable named 'age' and assign the value 25 to it
-age = 25
-        </code></pre>
+        <li>
+            How can you write a multi-line string?
+            <ul>
+                <li>a) Inside a single quotation: ‘string’</li>
+                <li>b) Inside a double quotation: “string”</li>
+                <li>c) Inside a triple quotation: “‘string”’</li>
+                <li>d) Without quotation</li>
+            </ul>
+        </li>
 
-        <p>In this example, <code>age</code> is the variable name, and <code>25</code> is the data assigned to it.</p>
+        <li>
+            Which data type is used for logical operations?
+            <ul>
+                <li>a) Integer</li>
+                <li>b) Decimal</li>
+                <li>c) String</li>
+                <li>d) Boolean</li>
+            </ul>
+        </li>
 
-        <h2>Using Variables in Programming:</h2>
+        <li>
+            Let’s declare a variable in JavaScript: var nickname = “Ramiz”. What type of data is assigned in the variable nickname?
+            <ul>
+                <li>a) Boolean</li>
+                <li>b) Integer</li>
+                <li>c) String</li>
+                <li>d) Decimal</li>
+            </ul>
+        </li>
 
-        <ol>
-            <li><strong>Storing Information:</strong> Variables let you store different types of information. For instance, you can have a variable called <code>name</code> to store a person's name.</li>
+        <li>
+            What is the full form of GIS?
+            <ul>
+                <li>a) Geographic Information Services</li>
+                <li>b) Graphical Integrated System</li>
+                <li>c) Glowing in the Sun</li>
+                <li>d) Geographical Information System</li>
+            </ul>
+        </li>
 
-            <pre><code>name = "Alice"</code></pre>
+        <li>
+            Which one of the following indicates declaring a variable in C programming language:
+            <ul>
+                <li>a) var age = 20</li>
+                <li>b) int age = 20</li>
+                <li>c) const age = 20</li>
+                <li>d) age = 20</li>
+            </ul>
+        </li>
+    </ol>
 
-            <li><strong>Changing Values:</strong> Variables are flexible; you can change their values as needed. If Alice has a birthday, you can update her age like this:</li>
-
-            <pre><code>age = 26</code></pre>
-
-            <li><strong>Mathematical Operations:</strong> Variables are handy for calculations. If you want to find the total cost of items, you can use variables for prices and quantities.</li>
-
-            <pre><code>price_per_item = 2.5
-quantity = 10
-total_cost = price_per_item * quantity</code></pre>
-
-            <li><strong>Readability and Reusability:</strong> Using variables makes your code more readable. Instead of writing the same value multiple times, you can use a variable. If the value changes, you only need to update it in one place.</li>
-
-            <pre><code>tax_rate = 0.08
-total_with_tax = total_cost * (1 + tax_rate)</code></pre>
-
-        </ol>
     </div>
 
     <script src="prism.js"></script>
