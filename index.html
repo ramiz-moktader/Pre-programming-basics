@@ -89,7 +89,7 @@
                  For example, in the decimal number 3.14, "3" is the whole number part, and "0.14" is the fractional part.
             For example: 1,20, -30, 8,0 all are integers.  On the other hand, 10.34,  10.67 are decimal numbers. 
             Though there are few differences between decimal and float, for the bringing we can consider both as same.</p>
-            <h3> Decimal</h3>
+            <h3> String</h3>
             
             <p>In programming, a "string" is a way to handle text or qualitative data. It could be a single word, a sentence, or even a collection of paragraphs. To create a string, we  wrap our text in quotation marks. For example:
             </p>
@@ -103,37 +103,13 @@ var full_greeting = greeting + " " + sentence
 //This would result in: "Hello This is a sample sentence." 
 </code></pre>
 <p>Strings are just sequences of characters, and we can do basic operations like putting them together or taking parts of them. 
-    They are handy for dealing with any kind of text-related information in programming.
+    They are handy for dealing with any kind of <strong> text-related information</strong>  in programming.
     In most programming languages, strings can be written inside either double quotation marks  <code>("string" )</code> , single quotation marks <code>('string')</code>  , 
     or triple quotation marks <code>('''string''' )</code>  depending on the purpose of use and language syntax. Double quotes are commonly used, but using single quotes can be useful when dealing with strings that contain double quotes, and vice versa. 
     Triple quotes are often used for <strong>multiline </strong> strings.</p>
-    <h3>Variable</h3>
-    <p>A variable is like a storage box in which we can keep different types of information. 
-        Imagine it as a labelled container where we can store numbers, words, or other pieces of data. 
-        It's associated with a symbolic name and may have a memory address. 
-        The name allows referencing the data, and values  can change during execution. 
-        To store a separate value, we need to use a separate variable.
-         Abstractly, we can say a variable is a named storage location of any kind of data.</p>
-         <h3>Declaring a Variable</h3>
-         <p>In most programming languages, declaring a variable involves giving it a name and specifying the type of data it will hold. 
-            Here's a simple example in Javascript</p>
-<pre class="language-js"><code>
-//Declare a variable named 'age' and assign the value 25 to it
-var age = 25
-</code></pre>
-<p> In this example, <code>'age'</code> is the variable name, and <code>'25'</code>  is the data assigned to it. 
-    The keyword <code> "var" </code>  indicates that it’s a variable. There are some other conventions to declare a variable in <strong>Javascript.</strong> 
-    In some programming languages we need to specify the data type when declaring a variable. Let’s see an example from <strong>C</strong> programming language: </p>
-<pre class="lang-clike"><code>
-int a = 8 //the keyword int indicates it will store integer type data 
-float = 80.10 //the keyword float indicates it will store float or decimal type data 
-char name = "my name" //the keyword char indicates that it will store string or text type data. 
-    </code></pre>
-    <p>But in <strong> Javascript</strong> or <strong>Python</strong>  we are not required to specify the data type when we declare a variable.
-         These programming languages dynamically identify the data type of a variable.
-    </p>
+
     <h3>Boolean</h3>
-    <p>Boolean refers to a data type that can have one of two values: true or false.  Boolean values are often used in conditional statements and expressions to make decisions in computer programs. 
+    <p>Boolean refers to a data type that can have one of two values: <strong> true</strong>  or <strong> false </strong> .  Boolean values are often used in conditional statements and expressions to make decisions in computer programs. 
     </p>
     <p>Let's think about some examples:</p>
         <ol>
@@ -164,6 +140,34 @@ char name = "my name" //the keyword char indicates that it will store string or 
     Let x = 9, y = 10. Now we will compare if x,  and y have the same value.
     Is x == y?  false  
     </code>
+
+
+    <h3>Variable</h3>
+    <p>A variable is like a storage box in which we can keep different types of information. 
+        Imagine it as a labelled container where we can store numbers, words, or other pieces of data. 
+        It's associated with a symbolic name and may have a memory address. 
+        The name allows referencing the data, and values  can change during execution. 
+        To store a separate value, we need to use a separate variable.
+         Abstractly, we can say a variable is a <strong>named storage location </strong>  of any kind of data.</p>
+         <h3>Declaring a Variable</h3>
+         <p>In most programming languages, declaring a variable involves giving it a name and specifying the type of data it will hold. 
+            Here's a simple example in Javascript</p>
+<pre class="language-js"><code>
+//Declare a variable named 'age' and assign the value 25 to it
+var age = 25
+</code></pre>
+<p> In this example, <code>'age'</code> is the variable name, and <code>'25'</code>  is the data assigned to it. 
+    The keyword <code> "var" </code>  indicates that it’s a variable. There are some other conventions to declare a variable in <strong>Javascript.</strong> 
+    In some programming languages we need to specify the data type when declaring a variable. Let’s see an example from <strong>C</strong> programming language: </p>
+<pre class="lang-clike"><code>
+int a = 8 //the keyword int indicates it will store integer type data 
+float = 80.10 //the keyword float indicates it will store float or decimal type data 
+char name = "my name" //the keyword char indicates that it will store string or text type data. 
+    </code></pre>
+    <p>But in <strong> Javascript</strong> or <strong>Python</strong>  we are not required to specify the data type when we declare a variable.
+         These programming languages dynamically identify the data type of a variable.
+    </p>
+    
 
     <h3>Arithmetic Operators</h3>
 
